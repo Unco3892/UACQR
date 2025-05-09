@@ -18,7 +18,7 @@ import copy
 from scipy.special import expit, logit
 from lightgbm import LGBMRegressor
 from scipy.spatial.distance import cdist
-from oqr.helper import HSIC, wsc_unbiased
+# from oqr.helper import HSIC, wsc_unbiased
 
 
 def generate_data(n, p, cond_exp, noise_sd_fn, x_dist = partial(np.random.uniform, low=0, high=10)):

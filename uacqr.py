@@ -103,7 +103,7 @@ class uacqr():
 
         self.uacqrp_model_params = self.model_params.copy()
         if not self.bootstrapping_for_uacqrp and (self.model_type=='rfqr'):
-            self.uacqrp_model_params["n_estimators"] = 1
+            self.uacqrp_model_params["n_estimators"] = 100
 
             if not(self.double_bootstrapping):
                 self.uacqrp_model_params["bootstrap"] = False
